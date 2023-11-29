@@ -2,10 +2,11 @@
   "name": "blog_bk",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -w src/resoursces/scss/ --output src/public/css/"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,16 @@
   },
   "homepage": "https://github.com/longleu0902/nodejs-blog#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.0.1",
+    "mongoose-slug-generator": "^1.0.4",
+    "npm-sass": "^3.1.0"
   },
   "devDependencies": {
+    "express-handlebars": "^5.1.0",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
     "nodemon": "^3.0.1"
   }
 }
